@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective:10px;
+
+}
+
+.container{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+
+    transform-style: preserve-3d;
+}
+
+.background{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+
+    transform: translateZ(-39px);
+    scale: 5;
+}
+
+.foreground{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+
+    object-fit: cover;
+
+    transform: translateZ(-20px);
+    scale: 3;
+} 
+/* D:\dot-Batch\Projects-dot\parallex-effect\code\index.html */
+
+#adventure{
+    position: absolute;
+    font-size: 900%;
+    color: whitesmoke;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top: 20%;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+    
+}
+
+.bg1{
+    background-image: url(./images/sport-1.jpg);
+}
+.bg2{
+    background-image: url(./images/sport-2.jpg);
+}
+.bg3{
+    background-image: url(./images/sport-3.jpg);
+}
+
+.br{
+    height: 60vh;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc{
+    position: absolute;
+    background-color: whitesmoke;
+    color: black;
+    padding: 0.5rem 2rem;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.secHeading{
+    font-size: 3rem;
+    padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 8rem;
+    margin: 5rem 0;
+    height: 30vh;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+.last{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
